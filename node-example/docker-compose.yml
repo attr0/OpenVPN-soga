@@ -1,0 +1,22 @@
+version: "3"
+services:
+  node-example:
+    # image
+    image: openvpn-soga
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    # configuration
+    container_name: node-example
+    ports:
+      - 49999:49999
+    volumes:
+      - ./vpn.ovpn:/vpn.ovpn
+      - ./vpn.auth:/vpn.auth
+      - ./soga.conf:/etc/soga/soga.conf
+      #- ./ssl.key:/ssl.key
+      #- ./ssl.pem:/ssl.pem
+      #- ./routes.yml:/etc/soga/routes.yml
+      #- ./dns.yml:/etc/soga/dns.yml
