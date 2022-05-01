@@ -16,7 +16,7 @@ Convert OpenVPN to a v2ray node based on docker. Use [soga](https://github.com/v
 Please prepare them yourself and clone this project into your disk
 
 ```bash
-git clone https://github.com/attr0/openvpn2soga.git.git openvpn2soga
+git clone https://github.com/attr0/openvpn2soga.git openvpn2soga
 cd openvpn2soga
 ```
 
