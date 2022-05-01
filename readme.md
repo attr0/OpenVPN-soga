@@ -1,6 +1,6 @@
-# OpenVPN to v2ray Node
+# OpenVPN to V2Ray Node
 
-Convert OpenVPN to a v2ray node based on docker. Use [soga](https://github.com/vaxilu/soga) as the v2ray backend.
+Convert OpenVPN to a V2Ray node based on docker. Use [soga](https://github.com/vaxilu/soga) as the v2ray backend.
 
 
 
@@ -13,7 +13,7 @@ Convert OpenVPN to a v2ray node based on docker. Use [soga](https://github.com/v
 
 
 
-Please prepare them yourself and clone this project into your disk
+Please prepare them yourself and clone this project into your disk.
 
 ```bash
 git clone https://github.com/attr0/OpenVPN-soga.git openvpn-soga
@@ -24,7 +24,7 @@ cd openvpn-soga
 
 ## Build Image
 
-This will generate a image including the latest soga and openvpn
+This will generate an image including the latest soga and OpenVPN.
 
 ```bash
 chmod +x ./build_container.sh
@@ -33,7 +33,7 @@ chmod +x ./build_container.sh
 
 
 
-The image is called `openvpn-soga`. Use the following command to see.
+The image is called `OpenVPN-soga`. Use the following command to see.
 
 ```
 docker image ls
@@ -53,7 +53,7 @@ cp node-example <your-node>
 
 
 
-There are four configuration
+There are four configurations.
 
 - `soga.conf`
 
@@ -63,7 +63,7 @@ There are four configuration
 
 - `vpn.ovpn`
 
-    openvpn configuration file, please change to yours
+    OpenVPN configuration file, please change to yours
 
     If password auth is required, change
 
@@ -81,7 +81,7 @@ There are four configuration
 
 - `vpn.auth`
 
-    auth file for openvpn. If password auth is required, pleace change it to
+    auth file for OpenVPN. If password auth is required, please change it to
 
     ```
     your_username
@@ -96,11 +96,11 @@ There are four configuration
 
     - change container name to yours (must be unique)
 
-    - change ports as you desired (must follow the v2ray configuration)
+    - change ports as you desire (must follow the v2ray configuration)
 
-    - change file map if you wish
+    - change the file map if you wish
 
-        > !DO NOT CHANGE THE FILE PATH IN THE CONTAINER SIDE (RIGHT OF THE COLON)
+        > !DO NOT CHANGE THE FILE PATH ON THE CONTAINER SIDE (RIGHT OF THE COLON)
 
 
 
@@ -111,11 +111,11 @@ docker-compose up -d
 docker logs <your_container_name>
 ```
 
-Start up the container, and print the log
+Startup the container, and print the log.
 
 
 
-In case you need to change your configuration
+In case you need to change your configuration.
 
 ```bash
 docker restart <your_container_name>
