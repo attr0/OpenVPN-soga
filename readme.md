@@ -3,6 +3,8 @@
 Convert OpenVPN to a V2Ray node based on docker. Use [soga](https://github.com/vaxilu/soga) as the v2ray backend.
 
 
+Similar Project to [OpenVPN-xray](https://github.com/attr0/OpenVPN-xray)
+
 
 # Usage
 
